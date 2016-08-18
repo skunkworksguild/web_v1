@@ -1,0 +1,559 @@
+/* General Page Design */
+
+body
+{
+  background-color: #000000;
+  background-image: url('../images/bg3-1.jpg');
+  background-repeat:no-repeat;
+  background-position:center top;
+  background-attachment:fixed;
+}
+
+
+div.content
+{
+  margin-left: auto;
+  margin-right: auto;
+  width:1025px;
+}
+
+div.middleBar
+{
+  float:left;
+  width:700px;
+  margin-right:25px;
+}
+
+div.rightBar
+{
+  float:right;
+  width:300px;
+}
+
+div.banner
+{
+  text-align:center;
+}
+
+div.banner img
+{
+  width:696px;
+  height:250px; 
+  border:0px;
+}
+
+/* Navigation Style */
+ 
+div.nav
+{      
+  text-align: center;   
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+div.nav img {
+  height:15px;
+  vertical-align:middle;
+  padding:0px;
+  margin:0px;
+  border:none;
+}
+
+div.nav a:hover,div.nav a.selected { 
+  color: #ffffff;
+}
+
+div.innerNav{
+    display: inline-block;
+}
+
+ul#navBar {
+  margin: 0 auto;
+}
+ul.drop a { 
+  display:inline-block; 
+  color: #CCCCCC;
+  text-decoration: none;
+  text-align: center;
+}
+ul.drop, ul.drop li, ul.drop ul { 
+  list-style: none; 
+  margin: 0; 
+  padding: 0; 
+}
+ul.drop { 
+  position: relative; 
+  z-index: 597; 
+  float: left; 
+}
+ul.drop li{ 
+  float: left; 
+  line-height: 1.3em; 
+  vertical-align: middle; 
+  padding: 5px 10px; 
+}
+ul.drop li.hover, ul.drop li:hover { 
+  position: relative; 
+  z-index: 599; 
+  cursor: default; 
+  color: #FFFFFF;
+}
+ul.drop ul { 
+  visibility: hidden; 
+  position: absolute; 
+  top: 100%; 
+  left: 0; 
+  z-index: 598; 
+  width: 195px; 
+  /*background: #FF0000;*/
+  text-align: left;
+  background-image: url('../images/75ob.png'); 
+  border: 1px solid #fff;
+}
+ul.drop ul li { 
+  float: none; 
+}
+ul.drop ul ul { 
+  top: -2px; 
+  left: 100%; 
+}
+ul.drop li:hover > ul { 
+  visibility: visible 
+}
+
+/* Titles */
+ 
+div.title
+{
+  border-bottom: 1px solid #000000;
+  vertical-align:top;
+  height:30px;
+  padding:5px;  
+  font-weight: bold; 
+  font-size: 1.5em;
+  background-image: url('../images/1px_small.png');
+  background-repeat: repeat-x; 
+}
+
+div.title img
+{
+  height:28px;
+  padding-left:5px;
+  padding-right:5px;
+  vertical-align:top;
+}
+
+div.newsSubject
+{
+  float:left;     
+  text-align:left;
+  font-weight: bold;
+  color: #BBBBBB;  
+}
+
+div.newsDate
+{        
+  float:right;
+  font-weight: bold;
+  font-size: 0.5em; 
+}
+
+div.newsDate span
+{ 
+  color: #cc6633; 
+}
+
+/* Content Wrappers */
+
+div.mainSection
+{
+  border:1px solid #000000;      
+  width:698px;
+  height:100%;
+  padding-bottom: 25px;  
+}
+
+div.sideSection
+{
+  border:1px solid #000000;    
+  width:298px; 
+  margin-bottom:25px;  
+}
+
+div.entireSection
+{
+  border:1px solid #000000;      
+  width:1025px;
+  height:100%;
+  padding-bottom: 25px;    
+}
+
+/* Main Content */
+
+div.section
+{
+  padding:15px;
+  text-align:left;       
+  font-weight: normal;
+  font-size: 1em;
+  background-image: url('../images//10o.png'); 
+}
+
+div.commentsLink
+{
+  text-align:right;
+  padding:10px;
+  font-size: 0.9em;
+}
+
+div.section img
+{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:662px;
+  border:3px #666666 solid;
+  border-radius:5px;
+  margin-top:10px;
+  margin-bottom:10px;
+}
+
+/* Roster */
+
+div.rosterRow {
+	 text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+   /* text-justify: distribute-all-lines; */
+	 
+}
+
+div.container:after {
+    content: '';
+    width: 100%;
+    display: inline-block;
+    font-size: 0;
+    line-height: 0
+}
+
+div.rosterClass
+{
+  vertical-align: top;
+  display: inline-block;
+   /*display: inline;*/
+   /* zoom: 1;*/
+  width:230px;
+  margin-bottom:20px; 
+  
+}
+
+div.rosterPlayer
+{
+  
+  background-repeat: no-repeat;
+  background-position: center;
+  /*position:block;*/
+  height: 90px;
+  margin: 0;
+  padding: 0;
+}
+
+div.playerInfo {
+background-color: #000000;
+height: 16px;
+margin-bottom: 4px;
+}
+
+
+div.rosterName
+{
+  float:left;
+ padding-left: 6px;
+  text-align:left;
+  font-weight:bold;
+  padding-bottom:5px;
+  text-shadow: 1px 1px #000000;
+}
+
+div.rosterName span
+{
+  font-size:0.8em;
+  font-weight:normal;
+  color:#888888;
+}
+
+div.rosterRank
+{
+  float:right;
+  text-align:right;
+  padding-right: 6px;
+  text-shadow: 1px 1px #000000;
+}
+
+div.rosterRank span
+{
+  color: #FFFFFF;
+  font-weight:bold;
+}
+
+div.rosterTitle{
+	 border:1px solid #000000;
+	 border-bottom: 1px solid #000000;
+	 vertical-align:top;
+	 height:30px;
+	 padding:5px;  
+	 text-align: center;
+	 font-weight: bold; 
+	 font-size: 1.5em;
+	 background-image: url('../images/1px_small.png');
+	 background-repeat: repeat-x; 
+}
+
+div.rosterTitle img
+{
+  height:28px;
+  padding-left:5px;
+  padding-right:5px;
+  vertical-align:top;
+}
+
+/* About Us */
+
+div.aboutSubject
+{ 
+  vertical-align:top;
+  font-weight: bold;
+  font-size: 1.3em;
+  color: #ffffff;
+  padding-bottom:15px;  
+}
+
+div.aboutText
+{
+  padding-top:10px;
+  padding-bottom:10px;
+  clear:both;
+  text-align:left;       
+  font-weight: bold;
+  font-size: 1em; 
+}
+
+/* Right Content */
+
+div.sectionRight
+{
+  padding:15px;
+  text-align:center;       
+  font-weight: bold;
+  font-size: 0.8em;
+  background-image: url('../images/10o.png'); 
+}
+
+div.sectionRight img
+{
+  display:block;
+  margin-left:auto;
+  margin-right:auto;
+  max-width:262px;
+  border:3px #333333 solid;
+  border-radius:5px;
+}
+
+div.videoThumb
+{
+  padding-top:10px;
+}
+
+div.videoThumb img
+{
+  max-width:262px;
+  /*border:3px #666666 solid;
+  border-radius:5px;*/
+}
+
+div.recruitmentTitle
+{
+  font-weight: bold; 
+  font-size: 1.5em;
+  padding-bottom:10px;
+  text-align:center;
+}
+
+div.recruitmentSubtitle
+{
+  font-weight: bold; 
+  font-size: 1.1em;
+  padding-bottom:20px;
+  margin-bottom:20px;
+  text-align:center;
+  border-bottom:1px #666666 solid;
+}
+
+/* stream */
+div.recruitmentList {
+  text-align: center;  
+  white-space: nowrap;  
+  font-size: 1.3em;
+}
+
+div.recruitmentEntry {
+  width: 80px;  
+  height: 75px; 
+  font-size: 0.7em; 
+  display: inline-block;  
+  vertical-align: middle;
+}
+
+
+
+/*u
+div.recruitmentEntry
+{
+  font-weight: bold; 
+  font-size: 1.2em;
+  margin-bottom:10px;
+  vertical-align:center;
+}
+
+div.recruitmentEntry img
+{
+  width:32px;  
+  margin: 10px 2px;
+  height:32px;   
+  text-align: center;  
+  display:inline;
+} 
+*/
+/* Stats */
+div.statsTitle
+{
+ margin: 0;
+ padding: 0;
+ text-align:center;
+ background-image:url('../images/50ob.png');
+ border: 1px solid #c3c3c3;
+}
+
+table.stats
+{
+border-collapse:collapse;
+width: 100%;
+border: 1px solid black;
+}
+
+table.achievements
+{
+border-collapse:collapse;
+width: 100%;
+}
+
+td.itemTitle
+{
+font-size: 12px;
+font-weight: bold;
+border: 1px solid black;
+text-align: center;
+}
+
+td.itemEntry
+{
+font-size: 9px;
+text-align: center;
+}
+
+td.itemEntry img
+{
+  padding:0px;
+  margin:0px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+td.mount
+{
+  border: 1px solid black;
+  text-align: center;
+}
+
+td.mount img
+{
+  border: none;
+  padding:0px;
+  margin:0px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+td.achievementColumn img
+{
+  border: none;
+  width:25px; 
+  height:25px;    
+  padding:0px;
+  margin:0px;
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto; 
+}
+
+td.markn
+{
+  border: 1px solid black;
+}
+
+td.markg
+{
+ border: 1px solid black;
+ background-color: #00FF00;
+}
+
+td.markgold {
+  border: 1px solid black;
+  background-color: #FFD700;
+  color: black;
+  text-align: center;
+}
+
+td.marksilver {
+  border: 1px solid black;
+  background-color: #C0C0C0;
+  color: black;
+  text-align: center;
+}
+
+td.markbronze {
+  border: 1px solid black;
+  background-color: #CD7F32;
+  color: black;
+  text-align: center;
+}
+
+td.markplat {
+  border: 1px solid black;
+  background-color: #E5E4E2;
+  color: black;
+  text-align: center;
+}
+
+td.statCount {
+ font-size: 9px;
+ text-align: center
+}
+
+
+/* stream */
+div.streamList {
+	text-align: center;  
+    white-space: nowrap;   
+	height: 50px;
+}
+
+div.streamEntry {
+	width: 65px;  
+    height: 75px;  
+    display: inline-block;  
+    vertical-align: middle;
+}
