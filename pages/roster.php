@@ -18,6 +18,8 @@ require(dirname(__FILE__) . '/../../sw_include/sw_db.php');
     if($class == 'Death Knight') {
       return '<span style="color:#C41F3B">'.$class.'</span>';
     } else if($class == 'Druid') {
+      return '<span style="color:#4DD827">'.$class.'</span>';
+    } else if($class == 'Demon Hunter') {
       return '<span style="color:#FF7D0A">'.$class.'</span>';
     } else if($class == 'Hunter') {
       return '<span style="color:#ABD473">'.$class.'</span>';
@@ -42,7 +44,7 @@ require(dirname(__FILE__) . '/../../sw_include/sw_db.php');
     }
   }
   
-  $list = array('Death Knight', 'Druid', 'Hunter', 'Mage', 'Monk', 'Paladin', 'Priest', 'Rogue', 'Shaman', 'Warlock', 'Warrior');
+  $list = array('Death Knight','Demon Hunter', 'Druid', 'Hunter', 'Mage', 'Monk', 'Paladin', 'Priest', 'Rogue', 'Shaman', 'Warlock', 'Warrior');
   $result = $db->query("SET NAMES utf8");
   
   $startRow = false;
