@@ -18,9 +18,9 @@ require(dirname(__FILE__) . '/../../sw_include/sw_db.php');
     if($class == 'Death Knight') {
       return '<span style="color:#C41F3B">'.$class.'</span>';
     } else if($class == 'Druid') {
-      return '<span style="color:#4DD827">'.$class.'</span>';
-    } else if($class == 'Demon Hunter') {
       return '<span style="color:#FF7D0A">'.$class.'</span>';
+    } else if($class == 'Demon Hunter') {
+      return '<span style="color:#A330C9">'.$class.'</span>';
     } else if($class == 'Hunter') {
       return '<span style="color:#ABD473">'.$class.'</span>';
     } else if($class == 'Mage') {
@@ -66,14 +66,14 @@ require(dirname(__FILE__) . '/../../sw_include/sw_db.php');
 	
 		switch(strtolower($class)){
 			case "death knight": 
-			case "mage":
-			case "priest":
-			case "warlock":
-				$startRow = true;
-				break;
 			case "hunter":
 			case "paladin":
 			case "shaman":
+				$startRow = true;
+				break;	
+			case "druid":
+			case "monk":
+			case "rogue":
 			case "warrior":
 				$endRow = true;
 				break;			
@@ -81,7 +81,6 @@ require(dirname(__FILE__) . '/../../sw_include/sw_db.php');
 				break;		
 		}
 		
-
 		if($startRow){
 			echo '<div class="rosterRow">';
 			$startRow = false;
